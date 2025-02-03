@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time in New York & Turkey</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #timeDisplay {
+            margin-top: 20%;
+        }
+        .footer-img {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 5px;
+            background: url('https://lem0n0fficial.github.io/pp.png') no-repeat center;
+            background-size: contain;
+        }
+    </style>
     <script>
         function updateTime() {
             const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', day: '2-digit', month: 'long', year: 'numeric', weekday: 'long' };
@@ -20,5 +39,6 @@
 </head>
 <body>
     <div id="timeDisplay"></div>
+    <div class="footer-img"></div>
 </body>
 </html>
